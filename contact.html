@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+  font-family: 'LM Roman';
+  src: url('/fonts/LM/lmroman10-regular.otf');
+  }
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'LM Roman', san-serif;
+  background-color: #ffffff;
+  min-width: 200px;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flash {
+  position: relative;
+  height: auto;
+  top: 40px;
+  vertical-align:top;
+  margin: 0 auto;
+  width: 95%
+}
+
+.flash img {
+  width: 95%;
+  
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flashText h3 {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.8;
+}
+
+.flashTextAlt h3 {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.8;
+}
+
+
+#navbar {
+  z-index:500; 
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 0.75;
+  margin: 0 auto;
+  padding: 0px 0 0px;
+  text-align: center;
+  font-family: 'LM Roman', san-serif;
+
+}
+
+#navbar a {
+  float: top;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #d81c1cff;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#footer {
+	background: #000000;
+	margin: 0;
+	opacity: 0.8;
+	padding: 36px 0 42px;
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 960px;
+}
+#footer div p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="SiteImages/logo.png" alt="">
+</div>
+
+<div id="navbar">
+  <a class='active' href="index.html">Home</a>
+  <a href="about.htnl">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="shop.html">Shop</a>
+</div>
+
+
+<div class='flash'>
+  <img src="SiteImages/GradFlash1.png" alt="">
+  <div class = 'flashText'>
+    <h3>TRANSFORM YOUR BODY</h3>
+  </div>
+</div> 
+
+</br>
+
+<div class='flash'>
+  <img src="SiteImages/GradFlash2_1.png" alt="">
+  <div class = 'flashTextAlt'>
+    <h3>TRANSFORM YOUR BODY</h3>
+  </div>
+</div>  
+
+</br>
+
+<div class='flash'>
+  <img src="SiteImages/GradFlash3.png" alt="">
+  <div class = 'flashText'>
+    <h3>TRANSFORM YOUR BODY</h3>
+  </div>
+</div>  
+
+
+</br>
+</br>
+</br>
+</br>
+
+
+<div id="footer">
+  <div>
+    <p>&copy; 2020 Mutant Muscle Training Systems UK by Joe Seaman. All rights reserved.</p>
+  </div>
+</div>
+  
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
